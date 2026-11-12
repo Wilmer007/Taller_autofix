@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1033993562744",
+    "project_id": "taller-autofix",
+    "storage_bucket": "taller-autofix.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1033993562744:android:e92b39287ef78c54949b8d",
+        "android_client_info": {
+          "package_name": "com.example.taller_autofix"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7i1PIgU2GKrMmA4KHpbw_J7wfhsmlegg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
