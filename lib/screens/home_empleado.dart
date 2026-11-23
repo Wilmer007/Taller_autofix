@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../models/usuario.dart';
 import '../services/auth_service.dart';
+import 'clientes_screen.dart';
 
 class HomeEmpleado extends StatelessWidget {
   final Usuario usuario;
@@ -18,7 +19,25 @@ class HomeEmpleado extends StatelessWidget {
           ),
         ],
       ),
-      body: Center(child: Text('Bienvenido, ${usuario.nombre} (empleado)')),
+      body: ListView(
+        padding: const EdgeInsets.all(16),
+        children: [
+          Text('Bienvenido, ${usuario.nombre}',
+              style: Theme.of(context).textTheme.titleLarge),
+          const SizedBox(height: 16),
+          Card(
+            child: ListTile(
+              leading: const Icon(Icons.people),
+              title: const Text('Clientes y vehículos'),
+              trailing: const Icon(Icons.chevron_right),
+              onTap: () => Navigator.push(
+                context,
+                MaterialPageRoute(builder: (_) => const ClientesScreen()),
+              ),
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
